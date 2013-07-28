@@ -1,6 +1,7 @@
-
 = Software Business Models and Software Freedom
+Fred Trotter <fred.trotter@gmail.com>
 
+= Business Models and Software Freedom
 There are several different popular business models that have become popular lately. But what are the implications of these business models for software freedom?
 
 == On Language
