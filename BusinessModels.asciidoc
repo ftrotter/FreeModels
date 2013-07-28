@@ -1,4 +1,5 @@
-=Software Business Models and Software Freedom
+
+= Software Business Models and Software Freedom
 
 There are several different popular business models that have become popular lately. But what are the implications of these business models for software freedom?
 
@@ -11,38 +12,38 @@ I also try to avoid the term "Free Software" in this article because it can mean
 More importantly, I will try to point out where people are abusing language in this space, as in saying "Commercial Software" when they in fact mean "Proprietary Software". Or using the term "Free Software" in an intentially confusing way. Or using prejorative language, like refering to copyleft as "viral".
 
 
-==Proprietary Software
-===The model
+== Proprietary Software
+=== The model
 Proprietary software companies sell software, frequently in binary form only, under licenses that severly restrict usage. Eventually the copyright on these software projects expire and then, theoretically at least, even proprietary software will convert to freedom respecting software. However, Congress has so far been willing to continually extend copyright ensuring that copyright is perpetual in pratice. Even if copyright is not extended again, it will be more than 100 years before software that is written today will become free software through the expiration of copyright.
 
-===Companies that use this model
+=== Companies that use this model
 Oracle, Microsoft
 
-===Freedom position
+=== Freedom position
 Proprietary software is unethical because it ignores the http://www.gnu.org/philosophy/free-sw.html[four essential software freedoms]
 
-==Software as a Service
-===The model
+== Software as a Service
+=== The model
 Companies can use combinations of private, proprietary and freedom respecting software to create an online service. Typically, these services are offered using websites that perform some service that is available to users over a web browser.
 
-===Companies that use this model
+=== Companies that use this model
 Google 
 
-===Freedom perspective
+=== Freedom perspective
 Both proprietary and free software can be used to power SaaS, so there is nothing inherently wrong with the business model. However, frequently companies that use SaaS do not share their sourcecode, which makes it equivilent to proprietary software. Also there is the possiblity that Free Software will be used as the basis for the service offering and that substantial improvements to the free software will not be released back to the Free Software community. The Affero GNU General Public License (AGPL) was created to ensure that SaaS companies would be forced to share improvements to Free Software projects that they contribute to. The third version of the Gnu General Public License can be upgraded to the third version of the AGPL in order to address this potential loophole in copyleft software.Over the long term, more projects releasing projects under the AGPL is a solution to the problems with this models. Also, the community should reward SaaS companies who themselves release code under the AGPL. 
 
-==Dual Licensing
+== Dual Licensing
 === the model
 Dual licensing occurs when a software vendor makes its software available under both a proprietary-friendly license and a strong copyleft license. Under this model, users of the software who wish to bundle the software with a proprietary product must purchase the proprietary-friendly license. In order to be able to offer the software under more than one license at the same time, a company executing this strategy must ensure that it owns all of the relevant copyrights. That means if the company recieves a patch for its copyleft product, it must obtain copyright from the contributor before including that patch in its proprietary-friendly version of the product. This is the reason that many copyleft business require contributors to sign a copyright assignment document before accepting patches from them.
 
 === Companies that use this model
 MySQL AB (aquired by Sun, in turn aquired by Oracle)
 
-===Freedom perspective
+=== Freedom perspective
 
 Companies that use this model release all of their software under copyleft, which means that there are no ethical problems with this type of business. However, Oracles confusing treatment of Java and MySQL have shown that it can be difficult to a project to thrive, once the copyright holder is no longer a "friend to the community". 
 
-==Service, Support and Bundling
+== Service, Support and Bundling
 === the model
 Under this model, a company will release software under a copyleft license and then offer services and support around that product. This can be a difficult model to execute because there is no way to force a company that is using the software to pay the creator of the software, and there is no way to prevent competitors from also offering services around a particular product.
 
@@ -52,26 +53,26 @@ In practice, almost all companies that succeed in this model are bundlers, takin
 RedHat, Canonical
 
 
-==Open Core or Widget Frosting
-===the model
+== Open Core or Widget Frosting
+=== the model
 Open Core offers the "core" of the software under a copyleft or strong copyleft license. Other "not central" parts of the product are available under proprietary licenses. 
 
 === companies that use this model
 SugarCRM
 
-===Freedom perspective
+=== Freedom perspective
 The problem with this model is that at least some software components could permenantly not be available. Depending on how a project is architected it could be difficult or impossible to replace those parts with components under freedom respecting licenses. The name itself is somewhat problematic because it implies that the right parts of the project are available to the community, and the parts that are withheld are less important. Also, once a company starts to use a proprietary component with proprietary data structures, it might become impossible to move to a copyleft replacement. So many of the fundemental problems with proprietary licenses remain with Open Core.
 
-===Ransom models
+=== Ransom models
 === the model
 Companies release proprietary software with the promise to convert the license once some event has occured or some condition has been met. For instance "This software becomes GPL once we have made $1M" or "This software becomes Apache once the current Queen of England has died"
 
-===Freedom perspective
+=== Freedom perspective
 There are two problems with these types of licenses. First, what if the condition of the license is never met. Second, what if the licensor backs out on the promise to relicense the software. Ransom licenses are only safe to use when the condition is reasonable and guaranteed to be met, and when the licensee has the right to perform the conversion to the copyleft license and not just the licensor.
 
 
-==Open Source Eventually Licenses
-===the model
+== Open Source Eventually Licenses
+=== the model
 OSE is a Ransom license that automatically converts to a copyleft license on a particular date
 
 === Freedom perspective
