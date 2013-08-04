@@ -4,7 +4,17 @@ Fred Trotter <fred.trotter@gmail.com>
 = Business Models and Software Freedom
 There are several different popular business models that have become popular lately. But what are the implications of these business models for software freedom?
 
+I wanted to create a resource for software developers who are convinced that software freedom is an important issue, and who still want to run a software development business.
+
+== The Premise
+
+As software approaches sentience, we are reaching an ethical crisis. We have no "laws of robotics" to protect our interests from robotic minds. There is no uniform code of ethics that robotic minds will honor. Recent talks from Eben Moglen make this point best: http://www.youtube.com/watch?v=vY43zF_eHu4
+
+Software freedom really just means "freedom from others intentions in the software that I use".
+
 == On Language
+
+Sadly, so much of the debate about software freedom has been given over to debates about what terms we should be using. I hope to avoid that trap if I can. 
 
 Whenever I mention the term "Open Source" or "Free Software" I am talking about software licenses that respect http://www.gnu.org/philosophy/free-sw.html[four essential software freedoms]. I take no position on the "Open Source" vs "Free Software" debate for the purposes of this article, other than to say that whenever I use the term "Open Source" here, I am only using to mean "Software that respects Freedom". I do this since so many of the thinkers and writers of the subject use the terms interchangeably. 
 
@@ -15,7 +25,9 @@ More importantly, I will try to point out where people are abusing language in t
 
 == Proprietary Software
 === The model
-Proprietary software companies sell software, frequently in binary form only, under licenses that severly restrict usage. Eventually the copyright on these software projects expire and then, theoretically at least, even proprietary software will convert to freedom respecting software. However, Congress has so far been willing to continually extend copyright ensuring that copyright is perpetual in pratice. Even if copyright is not extended again, it will be more than 100 years before software that is written today will become free software through the expiration of copyright.
+Proprietary software companies sell software, frequently in binary form only, under licenses that severly restrict usage. As software becomes more and more prevelant, it is a mistake to think "Proprietary software vendors seek to restrict what I can do with the software" it more accurate to say "Proprietary vendors seek to use software in order to control me".
+
+Eventually the copyright on these software projects expire and then, theoretically at least, even proprietary software will convert to freedom respecting software. However, the United States Congress has so far been willing to continually extend copyright ensuring that copyright is perpetual in pratice. Even if copyright is not extended again, it will be more than 100 years before software that is written today will become free software through the expiration of copyright.
 
 === Companies that use this model
 Oracle, Microsoft
@@ -31,11 +43,19 @@ Companies can use combinations of private, proprietary and freedom respecting so
 Google 
 
 === Freedom perspective
-Both proprietary and free software can be used to power SaaS, so there is nothing inherently wrong with the business model. However, frequently companies that use SaaS do not share their sourcecode, which makes it equivilent to proprietary software. Also there is the possiblity that Free Software will be used as the basis for the service offering and that substantial improvements to the free software will not be released back to the Free Software community. The Affero GNU General Public License (AGPL) was created to ensure that SaaS companies would be forced to share improvements to Free Software projects that they contribute to. The third version of the Gnu General Public License can be upgraded to the third version of the AGPL in order to address this potential loophole in copyleft software.Over the long term, more projects releasing projects under the AGPL is a solution to the problems with this models. Also, the community should reward SaaS companies who themselves release code under the AGPL. 
+Both proprietary and free software can be used to power SaaS, so there is nothing inherently un-free with the business model. 
+
+Frequently companies that use SaaS do not share their sourcecode, which makes it equivilent to proprietary software. Also there is the possiblity that Free Software will be used as the basis for the service offering and that substantial improvements to the free software will not be released back to the Free Software community. The Affero GNU General Public License (AGPL) was created to ensure that SaaS companies would be forced to share improvements to Free Software projects that they contribute to. The third version of the Gnu General Public License can be upgraded to the third version of the AGPL in order to address this potential loophole in copyleft software.Over the long term, more projects releasing projects under the AGPL is a solution to the problems with this models. Also, the community should reward SaaS companies who themselves release code under the AGPL. 
+
+Beyond plain software freedom issues, SaaS has a second problem. SaaS can make it much more difficult for users to access their data. Some SaaS vendors, most notably Google, have policies that allow users to download their data from a SaaS system, but that perspective is rare. This means that a company could be using AGPL software to offer SaaS, and still end up being able to control users, by trapping their data. 
+
+All of this leads to the conclusion that developers who want to offer SaaS, while still respecting software freedom, require quite a bit of care in order to thread the ethical needle.
 
 == Dual Licensing
 === the model
-Dual licensing occurs when a software vendor makes its software available under both a proprietary-friendly license and a strong copyleft license. Under this model, users of the software who wish to bundle the software with a proprietary product must purchase the proprietary-friendly license. In order to be able to offer the software under more than one license at the same time, a company executing this strategy must ensure that it owns all of the relevant copyrights. That means if the company recieves a patch for its copyleft product, it must obtain copyright from the contributor before including that patch in its proprietary-friendly version of the product. This is the reason that many copyleft business require contributors to sign a copyright assignment document before accepting patches from them.
+Dual licensing occurs when a software vendor makes its software available under both a proprietary-friendly license and a strong copyleft license. Under this model, users of the software who wish to bundle the software with a proprietary product must purchase the proprietary-friendly license. Otherwise, the customers would be obligated under copyleft to release their own products.
+
+In order to be able to offer the software under more than one license at the same time, a company executing this strategy must ensure that it owns all of the relevant copyrights. That means if the company recieves a patch for its copyleft product, it must obtain copyright from the contributor before including that patch in its proprietary-friendly version of the product. This is the reason that many copyleft business require contributors to sign a copyright assignment document before accepting patches from them.
 
 === Companies that use this model
 MySQL AB (aquired by Sun, in turn aquired by Oracle)
@@ -53,7 +73,6 @@ In practice, almost all companies that succeed in this model are bundlers, takin
 === companies that use this model
 RedHat, Canonical
 
-
 == Open Core or Widget Frosting
 === the model
 Open Core offers the "core" of the software under a copyleft or strong copyleft license. Other "not central" parts of the product are available under proprietary licenses. 
@@ -62,7 +81,9 @@ Open Core offers the "core" of the software under a copyleft or strong copyleft 
 SugarCRM
 
 === Freedom perspective
-The problem with this model is that at least some software components could permenantly not be available. Depending on how a project is architected it could be difficult or impossible to replace those parts with components under freedom respecting licenses. The name itself is somewhat problematic because it implies that the right parts of the project are available to the community, and the parts that are withheld are less important. Also, once a company starts to use a proprietary component with proprietary data structures, it might become impossible to move to a copyleft replacement. So many of the fundemental problems with proprietary licenses remain with Open Core.
+The problem with this model is that at least some software components could permenantly not be available. Depending on how a project is architected it could be difficult or impossible to replace those parts with components under freedom respecting licenses. 
+
+The term Open Core itself is somewhat problematic because it implies that the right parts of the project are available to the community, and the parts that are withheld are less important. Also, once a company starts to use a proprietary component with proprietary data structures, it might become impossible to move to a copyleft replacement. So many of the fundemental problems with proprietary licenses remain with Open Core.
 
 === Ransom models
 === the model
@@ -78,18 +99,4 @@ OSE is a Ransom license that automatically converts to a copyleft license on a p
 
 === Freedom perspective
 Obviously releasing copyleft immediately is better than OSE, but OSE is better than a proprietary license. Attention should be paid to how far out the license is from today. A license that converts in twenty years, for instance, is no better than a software patent.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
